@@ -1,0 +1,202 @@
+//
+//  HomeViewController.m
+//  DelightSports
+//
+//  Created by ACE hitsz302 on 12-5-21.
+//  Copyright (c) 2012年 Harbin University of Technology. All rights reserved.
+//
+
+#import "HomeViewController.h"
+#import "LeisureSportAppDelegate.h"
+#import "MenuSettings.h"
+
+@implementation HomeViewController
+
+//- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+//{
+//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+//    if (self) {
+//        // Custom initialization
+//    }
+//    return self;
+//}
+
+- (void)didReceiveMemoryWarning
+{
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    
+    // Release any cached data, images, etc that aren't in use.
+}
+
+#pragma mark - View lifecycle
+
+- (void)viewWillAppear:(BOOL)animated
+{
+	NSLog(@"Home page viewWillAppear");
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+	NSLog(@"Home page viewDidAppear");
+}
+
+//- (void)viewWillDisappear:(BOOL)animated
+//{
+//	NSLog(@"Home page viewWillDisappear");
+//}
+//
+//- (void)viewDidDisappear:(BOOL)animated
+//{
+//	NSLog(@"Home page viewDidDisappear");
+//}
+
+/*
+// Implement loadView to create a view hierarchy programmatically, without using a nib.
+- (void)loadView
+{
+}
+*/
+
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    UILabel *appName = [[[UILabel alloc] initWithFrame:CGRectMake(20, 20, 70, 30)] autorelease];
+    appName.text = @"怡情体育";
+    appName.textColor = [UIColor whiteColor];
+    appName.backgroundColor = [UIColor clearColor];
+    
+    UIImage *bgImg = [self scaleToSize:[UIImage imageNamed:@"background.png"] size:CGSizeMake(320, 480)];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:bgImg];
+    UIImage *lowerbgImg = [self scaleToSize:[UIImage imageNamed:@"下面.png"] size:CGSizeMake(320, 200)];
+    UIImageView *lowerBg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 280, 320, 200)];
+    [lowerBg setImage:lowerbgImg];
+    [self.view addSubview:lowerBg];
+    
+    [self.view addSubview:appName];
+    [self createMenu];
+}
+
+//图片缩放代码
+- (UIImage*)scaleToSize: (UIImage*)img size:(CGSize)size
+{
+    //创建一个bitmap的context
+    UIGraphicsBeginImageContext(size);
+    
+    //绘制改变大小的图片
+    [img drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    
+    //从当前context中创建以个改变大小后的图片
+    UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    //从当前的context出堆栈
+    UIGraphicsEndImageContext();
+    
+    return scaledImage;
+}
+
+//创建首页菜单
+- (void)createMenu
+{
+//    NSArray *upIconNames = [NSArray arrayWithObjects:@"NBA.png", @"西甲.png", @"意甲.png", @"中超.png", @"英超.png", @"德甲.png", @"CBA.png", nil];
+    NSArray *upperNames = [NSArray arrayWithObjects:@"NBA", @"西甲", @"意甲", @"中超", @"英超", @"德甲", @"CBA", nil];
+    
+    MenuSettings *upperMenu = [[MenuSettings alloc] initWithMarginTop:100 AndCellNum:7];
+    for (int i=0; i<upperMenu.cellNumOfView; i++) {
+        float x, y;
+        x = upperMenu.marginToSide + (i%4)*(upperMenu.cellSize + upperMenu.cellSpacing);
+        y = upperMenu.marginToTop + (i/4)*(upperMenu.cellSize + upperMenu.cellSpacing);
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(x+15, y+upperMenu.cellSize, upperMenu.cellSize, 14)];
+        [label setTextColor:[UIColor whiteColor]];
+        [label setFont:[UIFont systemFontOfSize:14]];
+        [label setText:[upperNames objectAtIndex:i]];
+        [label setBackgroundColor:[UIColor clearColor]];
+        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(x, y, upperMenu.cellSize, upperMenu.cellSize)];
+        button.tag = 100 + i;
+        [button setBackgroundImage:[UIImage imageNamed:[upperNames objectAtIndex:i]] forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(matchRedirect) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:button];
+        [self.view addSubview:label];
+        [button release];
+        [label release];
+    }    
+    [upperMenu release];
+//    [upIconNames release];//
+    
+    NSArray *lowerNames = [NSArray arrayWithObjects:@"我的关注", @"我的球队",@"",@"", @"新闻热点", @"赛事详情", @"球迷社区", @"电视直播", nil];
+    MenuSettings *lowerMenu = [[MenuSettings alloc] initWithMarginTop:300 AndCellNum:6];
+    for (int i=0; i<lowerMenu.cellNumOfView+2; i++) {
+        if(i==2 || i ==3)
+            continue;
+        float x, y;
+        x = lowerMenu.marginToSide + (i%4)*(lowerMenu.cellSize + lowerMenu.cellSpacing);
+        y = lowerMenu.marginToTop + (i/4)*(lowerMenu.cellSize + lowerMenu.cellSpacing);
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(x+3, y+lowerMenu.cellSize, lowerMenu.cellSize, 14)];
+        [label setTextColor:[UIColor whiteColor]];
+        [label setFont:[UIFont systemFontOfSize:14]];
+        [label setText:[lowerNames objectAtIndex:i]];
+        [label setBackgroundColor:[UIColor clearColor]];
+        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(x, y, lowerMenu.cellSize, lowerMenu.cellSize)];
+        button.tag = 200 + i;
+        [button setBackgroundImage:[UIImage imageNamed:[lowerNames objectAtIndex:i]] forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(otherRedirect:) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:button];
+        [self.view addSubview:label];
+        [button release];
+        [label release];
+    }    
+    [lowerMenu release];
+}
+
+- (void)matchRedirect
+{
+    LeisureSportAppDelegate *app=[[UIApplication sharedApplication] delegate];
+	[app switchControllerTo:2];
+}
+
+- (IBAction)otherRedirect:(id)sender
+{
+    LeisureSportAppDelegate *app=[[UIApplication sharedApplication] delegate];
+    int index = [sender tag] - 200;
+    switch (index) {
+        case 0:
+            [app switchControllerTo:2];
+            break;
+        case 1:    
+            [app switchControllerTo:4];
+            break;
+        case 4:
+            [app switchControllerTo:1];
+            break;
+        case 5:    
+            [app switchControllerTo:2];
+            break;
+        case 6:
+            [app switchControllerTo:4];
+            break;
+        case 7:    
+            [app switchControllerTo:3];
+            break;
+        default:
+            break;
+    }
+}
+
+
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+@end

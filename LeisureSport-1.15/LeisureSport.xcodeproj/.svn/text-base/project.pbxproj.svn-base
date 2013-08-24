@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17B2D295156C73F10099CDA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B2D294156C73F10099CDA7 /* UIKit.framework */; };
+		17B2D297156C73F10099CDA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B2D296156C73F10099CDA7 /* Foundation.framework */; };
+		17B2D299156C73F10099CDA7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B2D298156C73F10099CDA7 /* CoreGraphics.framework */; };
+		17B2D29F156C73F10099CDA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17B2D29D156C73F10099CDA7 /* InfoPlist.strings */; };
+		17B2D2A1156C73F10099CDA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B2D2A0156C73F10099CDA7 /* main.m */; };
+		17B2D2CB156C75040099CDA7 /* LeisureSportAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B2D2B0156C75040099CDA7 /* LeisureSportAppDelegate.m */; };
+		17B2D2CD156C75040099CDA7 /* bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B2D2B4156C75040099CDA7 /* bg1.png */; };
+		17B2D2CE156C75040099CDA7 /* bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B2D2B5156C75040099CDA7 /* bg2.png */; };
+		17B2D2CF156C75040099CDA7 /* btnNavBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B2D2B6156C75040099CDA7 /* btnNavBack.png */; };
+		17B2D2D0156C75040099CDA7 /* cellImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B2D2B7156C75040099CDA7 /* cellImage1.png */; };
+		17B2D2D1156C75040099CDA7 /* cellImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B2D2B8156C75040099CDA7 /* cellImage2.png */; };
+		17B2D2D2156C75040099CDA7 /* cellImage3.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B2D2B9156C75040099CDA7 /* cellImage3.png */; };
+		17B2D2D3156C75040099CDA7 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B2D2BA156C75040099CDA7 /* down.png */; };
+		17B2D2D4156C75040099CDA7 /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B2D2BB156C75040099CDA7 /* email.png */; };
+		17B2D2D5156C75040099CDA7 /* Page2.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B2D2BC156C75040099CDA7 /* Page2.png */; };
+		17B2D2D6156C75040099CDA7 /* Page3.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B2D2BD156C75040099CDA7 /* Page3.png */; };
+		17B2D2D7156C75040099CDA7 /* Page4.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B2D2BE156C75040099CDA7 /* Page4.png */; };
+		17B2D2D8156C75040099CDA7 /* Particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B2D2BF156C75040099CDA7 /* Particle.png */; };
+		17B2D2D9156C75040099CDA7 /* tool.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B2D2C0156C75040099CDA7 /* tool.png */; };
+		17B2D2DA156C75040099CDA7 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B2D2C1156C75040099CDA7 /* up.png */; };
+		17B2D2DB156C75040099CDA7 /* FunsCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B2D2C4156C75040099CDA7 /* FunsCenterController.m */; };
+		17B2D2DC156C75040099CDA7 /* IWatchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B2D2C6156C75040099CDA7 /* IWatchController.m */; };
+		17B2D2DD156C75040099CDA7 /* SportsDynamicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B2D2C8156C75040099CDA7 /* SportsDynamicController.m */; };
+		17B2D2DE156C75040099CDA7 /* TVLiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B2D2CA156C75040099CDA7 /* TVLiveController.m */; };
+		17B2D2E7156C7C740099CDA7 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B2D2E6156C7C740099CDA7 /* HomeViewController.m */; };
+		17B2D2EB156C815D0099CDA7 /* MenuSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 17B2D2EA156C815D0099CDA7 /* MenuSettings.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17B2D290156C73F10099CDA7 /* LeisureSport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeisureSport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B2D294156C73F10099CDA7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		17B2D296156C73F10099CDA7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		17B2D298156C73F10099CDA7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		17B2D29C156C73F10099CDA7 /* LeisureSport-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeisureSport-Info.plist"; sourceTree = "<group>"; };
+		17B2D29E156C73F10099CDA7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17B2D2A0156C73F10099CDA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17B2D2A2156C73F10099CDA7 /* LeisureSport-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeisureSport-Prefix.pch"; sourceTree = "<group>"; };
+		17B2D2AF156C75040099CDA7 /* LeisureSportAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeisureSportAppDelegate.h; sourceTree = "<group>"; };
+		17B2D2B0156C75040099CDA7 /* LeisureSportAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeisureSportAppDelegate.m; sourceTree = "<group>"; };
+		17B2D2B4156C75040099CDA7 /* bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg1.png; sourceTree = "<group>"; };
+		17B2D2B5156C75040099CDA7 /* bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg2.png; sourceTree = "<group>"; };
+		17B2D2B6156C75040099CDA7 /* btnNavBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnNavBack.png; sourceTree = "<group>"; };
+		17B2D2B7156C75040099CDA7 /* cellImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellImage1.png; sourceTree = "<group>"; };
+		17B2D2B8156C75040099CDA7 /* cellImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellImage2.png; sourceTree = "<group>"; };
+		17B2D2B9156C75040099CDA7 /* cellImage3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellImage3.png; sourceTree = "<group>"; };
+		17B2D2BA156C75040099CDA7 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		17B2D2BB156C75040099CDA7 /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		17B2D2BC156C75040099CDA7 /* Page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Page2.png; sourceTree = "<group>"; };
+		17B2D2BD156C75040099CDA7 /* Page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Page3.png; sourceTree = "<group>"; };
+		17B2D2BE156C75040099CDA7 /* Page4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Page4.png; sourceTree = "<group>"; };
+		17B2D2BF156C75040099CDA7 /* Particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particle.png; sourceTree = "<group>"; };
+		17B2D2C0156C75040099CDA7 /* tool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tool.png; sourceTree = "<group>"; };
+		17B2D2C1156C75040099CDA7 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		17B2D2C3156C75040099CDA7 /* FunsCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunsCenterController.h; sourceTree = "<group>"; };
+		17B2D2C4156C75040099CDA7 /* FunsCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunsCenterController.m; sourceTree = "<group>"; };
+		17B2D2C5156C75040099CDA7 /* IWatchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWatchController.h; sourceTree = "<group>"; };
+		17B2D2C6156C75040099CDA7 /* IWatchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWatchController.m; sourceTree = "<group>"; };
+		17B2D2C7156C75040099CDA7 /* SportsDynamicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsDynamicController.h; sourceTree = "<group>"; };
+		17B2D2C8156C75040099CDA7 /* SportsDynamicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportsDynamicController.m; sourceTree = "<group>"; };
+		17B2D2C9156C75040099CDA7 /* TVLiveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVLiveController.h; sourceTree = "<group>"; };
+		17B2D2CA156C75040099CDA7 /* TVLiveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVLiveController.m; sourceTree = "<group>"; };
+		17B2D2E5156C7C740099CDA7 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		17B2D2E6156C7C740099CDA7 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		17B2D2E9156C815D0099CDA7 /* MenuSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuSettings.h; sourceTree = "<group>"; };
+		17B2D2EA156C815D0099CDA7 /* MenuSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuSettings.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17B2D28D156C73F10099CDA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B2D295156C73F10099CDA7 /* UIKit.framework in Frameworks */,
+				17B2D297156C73F10099CDA7 /* Foundation.framework in Frameworks */,
+				17B2D299156C73F10099CDA7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17B2D285156C73F10099CDA7 = {
+			isa = PBXGroup;
+			children = (
+				17B2D29A156C73F10099CDA7 /* LeisureSport */,
+				17B2D293156C73F10099CDA7 /* Frameworks */,
+				17B2D291156C73F10099CDA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17B2D291156C73F10099CDA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17B2D290156C73F10099CDA7 /* LeisureSport.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17B2D293156C73F10099CDA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17B2D294156C73F10099CDA7 /* UIKit.framework */,
+				17B2D296156C73F10099CDA7 /* Foundation.framework */,
+				17B2D298156C73F10099CDA7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17B2D29A156C73F10099CDA7 /* LeisureSport */ = {
+			isa = PBXGroup;
+			children = (
+				17B2D2AF156C75040099CDA7 /* LeisureSportAppDelegate.h */,
+				17B2D2B0156C75040099CDA7 /* LeisureSportAppDelegate.m */,
+				17B2D2E4156C7C740099CDA7 /* homeview */,
+				17B2D2C2156C75040099CDA7 /* tabbarview */,
+				17B2D29B156C73F10099CDA7 /* Supporting Files */,
+			);
+			path = LeisureSport;
+			sourceTree = "<group>";
+		};
+		17B2D29B156C73F10099CDA7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17B2D2B3156C75040099CDA7 /* images */,
+				17B2D29C156C73F10099CDA7 /* LeisureSport-Info.plist */,
+				17B2D29D156C73F10099CDA7 /* InfoPlist.strings */,
+				17B2D2A0156C73F10099CDA7 /* main.m */,
+				17B2D2A2156C73F10099CDA7 /* LeisureSport-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17B2D2B3156C75040099CDA7 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				17B2D2B4156C75040099CDA7 /* bg1.png */,
+				17B2D2B5156C75040099CDA7 /* bg2.png */,
+				17B2D2B6156C75040099CDA7 /* btnNavBack.png */,
+				17B2D2B7156C75040099CDA7 /* cellImage1.png */,
+				17B2D2B8156C75040099CDA7 /* cellImage2.png */,
+				17B2D2B9156C75040099CDA7 /* cellImage3.png */,
+				17B2D2BA156C75040099CDA7 /* down.png */,
+				17B2D2BB156C75040099CDA7 /* email.png */,
+				17B2D2BC156C75040099CDA7 /* Page2.png */,
+				17B2D2BD156C75040099CDA7 /* Page3.png */,
+				17B2D2BE156C75040099CDA7 /* Page4.png */,
+				17B2D2BF156C75040099CDA7 /* Particle.png */,
+				17B2D2C0156C75040099CDA7 /* tool.png */,
+				17B2D2C1156C75040099CDA7 /* up.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		17B2D2C2156C75040099CDA7 /* tabbarview */ = {
+			isa = PBXGroup;
+			children = (
+				17B2D2C3156C75040099CDA7 /* FunsCenterController.h */,
+				17B2D2C4156C75040099CDA7 /* FunsCenterController.m */,
+				17B2D2C5156C75040099CDA7 /* IWatchController.h */,
+				17B2D2C6156C75040099CDA7 /* IWatchController.m */,
+				17B2D2C7156C75040099CDA7 /* SportsDynamicController.h */,
+				17B2D2C8156C75040099CDA7 /* SportsDynamicController.m */,
+				17B2D2C9156C75040099CDA7 /* TVLiveController.h */,
+				17B2D2CA156C75040099CDA7 /* TVLiveController.m */,
+			);
+			path = tabbarview;
+			sourceTree = "<group>";
+		};
+		17B2D2E4156C7C740099CDA7 /* homeview */ = {
+			isa = PBXGroup;
+			children = (
+				17B2D2E5156C7C740099CDA7 /* HomeViewController.h */,
+				17B2D2E6156C7C740099CDA7 /* HomeViewController.m */,
+				17B2D2E9156C815D0099CDA7 /* MenuSettings.h */,
+				17B2D2EA156C815D0099CDA7 /* MenuSettings.m */,
+			);
+			path = homeview;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17B2D28F156C73F10099CDA7 /* LeisureSport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17B2D2A8156C73F10099CDA7 /* Build configuration list for PBXNativeTarget "LeisureSport" */;
+			buildPhases = (
+				17B2D28C156C73F10099CDA7 /* Sources */,
+				17B2D28D156C73F10099CDA7 /* Frameworks */,
+				17B2D28E156C73F10099CDA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeisureSport;
+			productName = LeisureSport;
+			productReference = 17B2D290156C73F10099CDA7 /* LeisureSport.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17B2D287156C73F10099CDA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Harbin University of Technology";
+			};
+			buildConfigurationList = 17B2D28A156C73F10099CDA7 /* Build configuration list for PBXProject "LeisureSport" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 17B2D285156C73F10099CDA7;
+			productRefGroup = 17B2D291156C73F10099CDA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17B2D28F156C73F10099CDA7 /* LeisureSport */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17B2D28E156C73F10099CDA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B2D29F156C73F10099CDA7 /* InfoPlist.strings in Resources */,
+				17B2D2CD156C75040099CDA7 /* bg1.png in Resources */,
+				17B2D2CE156C75040099CDA7 /* bg2.png in Resources */,
+				17B2D2CF156C75040099CDA7 /* btnNavBack.png in Resources */,
+				17B2D2D0156C75040099CDA7 /* cellImage1.png in Resources */,
+				17B2D2D1156C75040099CDA7 /* cellImage2.png in Resources */,
+				17B2D2D2156C75040099CDA7 /* cellImage3.png in Resources */,
+				17B2D2D3156C75040099CDA7 /* down.png in Resources */,
+				17B2D2D4156C75040099CDA7 /* email.png in Resources */,
+				17B2D2D5156C75040099CDA7 /* Page2.png in Resources */,
+				17B2D2D6156C75040099CDA7 /* Page3.png in Resources */,
+				17B2D2D7156C75040099CDA7 /* Page4.png in Resources */,
+				17B2D2D8156C75040099CDA7 /* Particle.png in Resources */,
+				17B2D2D9156C75040099CDA7 /* tool.png in Resources */,
+				17B2D2DA156C75040099CDA7 /* up.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17B2D28C156C73F10099CDA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B2D2A1156C73F10099CDA7 /* main.m in Sources */,
+				17B2D2CB156C75040099CDA7 /* LeisureSportAppDelegate.m in Sources */,
+				17B2D2DB156C75040099CDA7 /* FunsCenterController.m in Sources */,
+				17B2D2DC156C75040099CDA7 /* IWatchController.m in Sources */,
+				17B2D2DD156C75040099CDA7 /* SportsDynamicController.m in Sources */,
+				17B2D2DE156C75040099CDA7 /* TVLiveController.m in Sources */,
+				17B2D2E7156C7C740099CDA7 /* HomeViewController.m in Sources */,
+				17B2D2EB156C815D0099CDA7 /* MenuSettings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		17B2D29D156C73F10099CDA7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17B2D29E156C73F10099CDA7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17B2D2A6156C73F10099CDA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17B2D2A7156C73F10099CDA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17B2D2A9156C73F10099CDA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeisureSport/LeisureSport-Prefix.pch";
+				INFOPLIST_FILE = "LeisureSport/LeisureSport-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		17B2D2AA156C73F10099CDA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeisureSport/LeisureSport-Prefix.pch";
+				INFOPLIST_FILE = "LeisureSport/LeisureSport-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17B2D28A156C73F10099CDA7 /* Build configuration list for PBXProject "LeisureSport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17B2D2A6156C73F10099CDA7 /* Debug */,
+				17B2D2A7156C73F10099CDA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17B2D2A8156C73F10099CDA7 /* Build configuration list for PBXNativeTarget "LeisureSport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17B2D2A9156C73F10099CDA7 /* Debug */,
+				17B2D2AA156C73F10099CDA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17B2D287156C73F10099CDA7 /* Project object */;
+}

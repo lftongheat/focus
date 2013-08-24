@@ -1,0 +1,135 @@
+// !$*UTF8*$!
+{
+	172BC05C157366A400EBB15E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 17B2D2AF156C75040099CDA7 /* LeisureSportAppDelegate.h */;
+		name = "LeisureSportAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 648;
+		vrLoc = 0;
+	};
+	172BC05D157366A400EBB15E /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 17B2D2B0156C75040099CDA7 /* LeisureSportAppDelegate.m */;
+	};
+	172BC05E157366A400EBB15E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 17B2D2B0156C75040099CDA7 /* LeisureSportAppDelegate.m */;
+		name = "LeisureSportAppDelegate.m: 13";
+		rLen = 0;
+		rLoc = 324;
+		rType = 0;
+		vrLen = 869;
+		vrLoc = 625;
+	};
+	177B4BC2156CBA9A00D74685 /* LeisureSport */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = LeisureSport;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	177B4BD0156CBA9E00D74685 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	177B4BD1156CBA9E00D74685 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	177B4BD2156CBAC900D74685 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+	};
+	17B2D287156C73F10099CDA7 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 177B4BC2156CBA9A00D74685 /* LeisureSport */;
+		activeTarget = 17B2D28F156C73F10099CDA7 /* LeisureSport */;
+		codeSenseManager = 177B4BD1156CBA9E00D74685 /* Code sense */;
+		executables = (
+			177B4BC2156CBA9A00D74685 /* LeisureSport */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					757,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 359884436;
+			PBXWorkspaceStateSaveDate = 359884436;
+		};
+		perUserProjectItems = {
+			172BC05C157366A400EBB15E /* PBXTextBookmark */ = 172BC05C157366A400EBB15E /* PBXTextBookmark */;
+			172BC05D157366A400EBB15E /* PBXBookmark */ = 172BC05D157366A400EBB15E /* PBXBookmark */;
+			172BC05E157366A400EBB15E /* PBXTextBookmark */ = 172BC05E157366A400EBB15E /* PBXTextBookmark */;
+			177B4BD2156CBAC900D74685 /* PBXBookmark */ = 177B4BD2156CBAC900D74685 /* PBXBookmark */;
+		};
+		sourceControlManager = 177B4BD0156CBA9E00D74685 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	17B2D28F156C73F10099CDA7 /* LeisureSport */ = {
+		activeExec = 0;
+		executables = (
+			177B4BC2156CBA9A00D74685 /* LeisureSport */,
+		);
+	};
+	17B2D2AF156C75040099CDA7 /* LeisureSportAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {935, 507}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 648}";
+		};
+	};
+	17B2D2B0156C75040099CDA7 /* LeisureSportAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {935, 2327}}";
+			sepNavSelRange = "{324, 0}";
+			sepNavVisRange = "{625, 869}";
+		};
+	};
+}
